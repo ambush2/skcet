@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <title>EDC</title>
+	<link rel="icon" type="image/png" href="skceticon.png" />
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+      <link rel="stylesheet" href="depnavbar.css" type="text/css"/>
+      <link rel="stylesheet" href="footer.css" type="text/css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/024e10af69.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style media="screen">
+      body,html{
+        overflow-x:hidden;
+      }
+      .body{
+        font-size:16px;
+        font-family:Helvetica, sans-serif;
+      }
+      .cont1{
+      padding-top:50px;
+      font-family:Helvetica, sans-serif;
+      }
+      .cont1 p{
+        color : black;
+        font-size : 18px;
+        font-weight : semibold;
+        padding-left: 10px;
+        font-family:Helvetica, sans-serif;
+      }
+      .cont1 h1{
+        font-weight : bold;
+        font-family:Helvetica, sans-serif;
+      }
+      .jan{
+        padding-top:0px;
+      }
+      .keya{
+          width:100%;
+               height: 50px;
+               font-family: Helvetica,sans-serif;
+               font-weight: 600;
+          font-size: 20px;
+          color : white;
+               background-color: #3e68a8;
+               border-style: none;
+               border-radius: 10px;
+          text-align: center;
+      }
+    .keya:hover{
+      background-color:orange;
+
+    }
+    .jk{
+      padding-top:50px;
+    }
+    .jj{
+      font-size:24px;
+    }
+    .gray{
+      color:grey;
+    }
+    .princi{
+      height:270px;
+      border:solid 2px #2bd;
+     
+    }
+    
+    p{
+          font-size : 18px;
+          text-align: justify;
+          font-family: Helvetica, sans-serif;
+        }
+        a{
+          text-decoration: none;
+          font-family: Helvetica, sans-serif;
+        }
+    
+        .lis{
+          font-family: Helvetica, sans-serif;
+          padding-top:20px;
+          font-size: 18px;
+          text-align: justify;
+          
+        }
+        .lis li{
+          margin-left: 50px;
+        }
+        .a2:hover{
+          font-size: 16px;
+        }
+  .Heading3{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: 1000;
+  }
+  .up{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family:Helvetica, sans-serif;
+  }
+          .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: #3e68a8; /* Fallback color */
+  background-color: #3e68a8; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #3e68a8;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+    height: 95%;
+}
+
+/* The Close Button */
+.close {
+  color: #3e68a8;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #3e68a8;
+  text-decoration: none;
+  cursor: pointer;
+}
+           .btnstyle{
+               width:100%;
+               height: 50px;
+               font-family: Helvetica,sans-serif;
+               font-weight: 600;
+          font-size: 20px;
+          color : white;
+               background-color: #3e68a8;
+               border-style: none;
+               border-radius: 10px;
+           }
+        .btnstyle:hover{
+            background-color: #3e68a8;
+        }
+          
+          .imgclk{
+               overflow-y: scroll;
+               
+              vertical-align: middle;
+              
+           }
+ 
+ 
+  @media only screen and (max-width:990px){
+    p{
+          font-size : 15px;}
+
+    .wid{
+      width:100%;
+      padding: 0;
+      margin: 0;
+    }
+    .lis{
+      padding: 0px;
+      padding-right: 0px;
+    }
+  }
+      @media only screen and (max-width:630px){
+        .cont1 p{
+          font-size: 12px;
+
+        }
+      }
+      .san {
+margin-top:1px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+    .front-img-text {
+font-family: 'Helvetica',Arial;
+background:black;
+height:7vh;
+width:10vw;
+border-bottom:4px solid #FAAF2D;
+opacity:0.6;
+font-size:32px;
+ position: absolute;
+ bottom: 50px;
+ left: 70px;
+}
+.p td, .p th {
+  font-family: 'Helvetica',sans-serif;
+  border: 1px solid #ddd;
+  padding: 18px;
+}
+
+.p tr:nth-child(even){background-color: #f2f2f2;}
+
+
+
+.p th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #3e68a8;
+  color: white;
+  font-family: 'Helvetica',sans-serif;
+  font-weight:bold;
+}
+.p .a{
+width : 25%
+}
+
+.p .b{
+width : 40%;
+text-align:center;
+}
+
+.p .c{
+width : 25%;
+text-align:center;
+}
+
+.p .d{
+width : 10%
+}
+td{
+  font-size: 16px;
+}
+th{
+font-size:16px;
+text-align:center;
+}
+    </style>
+
+  <style media="screen">
+    .h{
+      color : #3e68a8;
+      font-weight : bold;
+      font-size : 30px;
+    }
+    .l{
+      list-style-type : none;
+        font-size : 18px;
+        color : black;
+    }
+
+    .asd{
+      text-decoration : none;
+      font-size : 18px;
+      color : black;
+    }
+      .san {
+  position: relative;
+  height:1px;
+  text-align: center;
+  color: white;
+}
+
+.front-img-text {
+font-family:'Helvetica','Sans-serif';
+background:black;
+height:7vh;
+width:26vw;
+border-bottom:4px solid #3e68a8;
+opacity:0.6;
+font-size:32px;
+ position: absolute;
+  bottom: 70px;
+
+  left: 70px;
+}
+  </style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #adadad;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #3e68a8;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+} 
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <img src="skcetlogo.png" alt="skcet logo"  />
+
+</div>
+
+
+
+<div id="navbar">
+  <a href="skcet.html">Home</a>
+  <a href="programmes.html">Programmes</a>
+  <a href="acamou.html">Acadamics</a>
+  <a href="addmprocedure.html">Admission</a>
+  <a  class="active" href="edc.html">EDC</a>
+</div>
+
+<div class="content">
+     
+      <script>
+        $(function(){
+          $("#header").load("header.html")
+          $("#footer").load("footer.html")
+        });
+     </script>
+   <h1><br><br></h1>
+
+    <br>
+      <div class="san">
+        <div class="front-img-text" style="">EDC</div>
+        </div>
+
+           <div class="WSk"><h2><p style="text-decoration:underline;text-decoration-color: orange; font-family:'Helvetica',sans-serif ; font-size:30px;text-align:center;color:#3e68a8;font-weight: bold;">ENTREPRENEUSHIP DEVELOPMENT CELL</p></h2></div>
+      <div class="container">
+            <p>Entrepreneuship Development Cell (EDC) inspires the budding engineers to float their own business / venture through various seminars and workshops.  Eminet industrialiss and budding entrepreneurs are often invited to motivate the young students.  The succssful alumni of SKCET pursuing the entrepreneurial route also encourage our students through frequent interactions.  The college also has an active innovation and Entrepreneurship Development Centre (IEDC) funded by the Department of Science and Technology (DST), Government of India.  Funds worth to a tune of Rs. 5, 00, 000/- are offered to five best innovative students projects every year to enable them to take it to the market.</p>
+            <p>The Entrepreneurship Development cell of Sri Krishna College of Engineering and Technology is actively organizing various activities every year to inculcate Entrepreneurship culture among students. The following events are regularly organized by the cell under the aegis of Department of Science and Technology, Entrepreneurship Development Institute, India and Tamil Nadu , Ministry of Human Resource and Development</p>
+            <ol class="lis">
+              <li>Entrepreneurship Awareness Camp</li>
+              <li>Design thinking Workshops</li>
+              <li>Idea Contest</li>
+              <li>Software and Hardware Hackathons</li>
+              <li>Project Contest</li>
+              <li>Webinars</li>
+              <li>Industry visits and Field visits</li>
+              <li>Interaction with successful Entrepreneurs</li>
+            </ol>
+            <p>The following funded programmes have been successfully implemented in the campus. The details are tabulated below:</p>
+            <div class="container lis">                
+              <table class="p">
+                <tbody>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Programmes</th>
+                    <th>Amount</th>
+                    <th>Coordinators</th>
+                    <th>Period</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>DST-Innovation and Entrepreneurship Development cell</td>
+                    <td align="right">45,00,000</td>
+                    <td>Dr. P. Ashoka Varthanan, Professor and Head, MECH</td>
+                    <td>2014 - 2017</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>DST NIMAT Project-2017/Entrepreneurship Awareness Camp</td>
+                    <td align="right">80,000</td>
+                    <td>Dr.J.Janet, Principal<br> Dr. M.Sujaritha, Professor / CSE</td>
+                    <td>2017 - 2018</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>DST NIMAT Project-2018/Entrepreneurship Awareness Camp</td>
+                    <td align="right">40,000</td>
+                    <td>Dr.J.Janet, Principal<br>Dr. M.Sujaritha, Professor / CSE</td>
+                    <td>2018 - 2019</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>AICTE &MHRD Institution Innovation cell</td>
+                    <td align="right">50,000</td>
+                    <td>Dr. P. Ashoka Varthanan, Professor and Head, MECH</td>
+                    <td>2018 - 2019</td>
+                  </tr>                  
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <div class="container">
+            <h1><span class="badge badge-secondary">About Ecell</span></h1>
+            <p>Ecell of SKCET comprises of a student team playing roles such as CEO, Secretary, Treasurer, Event Manager and Magazine Editor.  This team  inspires the students by conducting Contests such as Ideation, Design thinking and marketing. They also organize seminars and webinars to the Entrepreneurship interested students and involve in social networking. The Ideas selected in the contests will be submitted for hackathons,  NIDHI  schemes and other funding schemes offered by incubators. </p>
+            </div>
+
+      </div>
+            </div>
+
+
+
+
+
+
+
+    <footer class="ct-footer" id="footer">
+<header class="header" id="header">
+   <img src="skcetlogo.png" alt="skcet logo"  />
+   <br>
+   <a href="https://www.instagram.com/lifeatskcet/" class="fa fa-instagram"></a>
+   <a href="https://www.facebook.com/lifeatskcet/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/skcetofficial" class="fa fa-twitter"></a>
+
+<a href="https://in.linkedin.com/school/sri-krishna-college-of-engineering-and-technology/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/watch?v=gx1PWcS0P3Q" class="fa fa-youtube"></a>
+     </header>
+    </footer>
+
+   
+    <script>
+       $('.collapsee').on('click',function(){
+       $('nav').toggleClass('showing');
+       })
+       
+    </script>
+           
+    </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
